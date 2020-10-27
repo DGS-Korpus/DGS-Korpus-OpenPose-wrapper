@@ -27,7 +27,7 @@ Here is an (abridged) example for a recording session with three camera perspect
     "id": "1413451-11105600-11163240",
     "camera": "b1",
     "width": 1280,
-    "height": 720
+    "height": 720,
     "frames": {
       "0": { ... },
       ...
