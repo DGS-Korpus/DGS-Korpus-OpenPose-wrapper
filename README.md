@@ -1,17 +1,60 @@
 # DGS-Korpus OpenPose wrapper
 
-Collect [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose) frame files using the _DGS-Korpus OpenPose wrapper format_ used by the [Public DGS Corpus](http://ling.meine-dgs.de).
+Collect [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose) frame files into a single file using the _DGS-Korpus OpenPose wrapper format_ used by the [Public DGS Corpus](http://ling.meine-dgs.de).
+
+For more information, see the project note [_OpenPose in the Public DGS Corpus_](https://doi.org/10.25592/uhhfdm.842).
+For the reverse procedure (single wrapper file to many frame files), see the [Public Corpus OpenPose frame extractor](https://github.com/DGS-Korpus/Public-Corpus-OpenPose-frame-extractor) script.
 
 ## The Wrapper Format
 By default, OpenPose creates individual files for each frame of a video.
-In contrast, the DGS-Korpus wrapper format collects the frames for all camera perspectives of a recording session in a single file.
-This approach offers the following advantages over this:
+In contrast, the _DGS-Korpus wrapper format_ collects the frames for all camera perspectives of a recording session in a single file.
+
+Here is an (abridged) example for a recording session with three camera perspectives:
+```json
+[ 
+  {
+    "id": "1413451-11105600-11163240",
+    "camera": "a1",
+    "width": 1280,
+    "height": 720,
+    "frames": {
+      "0": { ... },
+      "1": { ... },
+      ...
+      "16840": { ... }
+    }
+  }, {
+    "id": "1413451-11105600-11163240",
+    "camera": "b1",
+    "width": 1280,
+    "height": 720
+    "frames": {
+      "0": { ... },
+      ...
+      "16840": { ... }
+    }
+  }, {
+    "id": "1413451-11105600-11163240",
+    "camera": "c",
+    "width": 1280,
+    "height": 720,
+    "frames": {
+      "0": { ... },
+      ...
+      "16840": { ... }
+    }
+  }
+]
+
+```
+
+
+This approach offers the following advantages:
 1. Avoids file system slowdowns caused by having to handle many small files in the same directory.
 2. Contains additional information about the recording, such as its resolution
 3. Collects related recordings, such as different camera perspectives of the same event.
 
-For more information on the _DGS-Korpus OpenPose wrapper format_, see the project note [OpenPose in the Public DGS Corpus](https://www.sign-lang.uni-hamburg.de/dgs-korpus/arbeitspapiere/AP06-2019-01.html)
-
+For more details, see the [project note](https://doi.org/10.25592/uhhfdm.842).
 
 
 ## File naming patterns
