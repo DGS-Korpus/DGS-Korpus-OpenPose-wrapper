@@ -1,3 +1,7 @@
+Latest release: [![DOI](https://www.fdr.uni-hamburg.de/badge/DOI/10.25592/uhhfdm.8241.svg)](https://doi.org/10.25592/uhhfdm.8241)
+
+This release: See [release description](https://github.com/DGS-Korpus/DGS-Korpus-OpenPose-wrapper/releases/tag/v1.0.0)
+
 # DGS-Korpus OpenPose wrapper
 
 Collect [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose) frame files into a single file using the _DGS-Korpus OpenPose wrapper format_ used by the [Public DGS Corpus](http://ling.meine-dgs.de).
