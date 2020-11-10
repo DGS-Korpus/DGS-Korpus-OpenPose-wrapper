@@ -1,6 +1,6 @@
-Latest release: [![DOI](https://www.fdr.uni-hamburg.de/badge/DOI/10.25592/uhhfdm.8241.svg)](https://doi.org/10.25592/uhhfdm.8241)
+__Latest release:__ [![DOI](https://www.fdr.uni-hamburg.de/badge/DOI/10.25592/uhhfdm.8241.svg)](https://doi.org/10.25592/uhhfdm.8241)
 
-This release: See [release description](https://github.com/DGS-Korpus/DGS-Korpus-OpenPose-wrapper/releases/tag/v1.0.0)
+__This release:__ See [release description](https://github.com/DGS-Korpus/DGS-Korpus-OpenPose-wrapper/releases/tag/v1.0.0).
 
 # DGS-Korpus OpenPose wrapper
 
